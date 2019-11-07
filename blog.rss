@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Blog</title>
+        <link>https://www.mutanx-technologies.com/blog.rss</link>
+        <description>Sample Blog Description</description>
+        <language>en-us</language>
+        <atom:link href="https://www.mutanx-technologies.com/blog.rss" rel="self" type="application/rss+xml"/>
+                        <item>
+            <title>Firebase Job Dispatcher</title>
+            <link>https://www.mutanx-technologies.com/blog/firebase-job-dispatcher</link>
+            <description>
+                <![CDATA[
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h1>Firebase JobDispatcher [DEPRECATED] <a href="https://travis-ci.org/firebase/firebase-jobdispatcher-android"><img src="https://travis-ci.org/firebase/firebase-jobdispatcher-android.svg?branch=master" alt="Build Status"></a></h1>
+<p><strong>Last year, we announced Android Jetpack
+<a href="https://developer.android.com/topic/libraries/architecture/workmanager/">WorkManager</a>.
+WorkManager, the new job management system in Jetpack, incorporates the features
+of Firebase Job Dispatcher (FJD) and Android&rsquo;s
+<a href="https://developer.android.com/reference/android/app/job/JobScheduler">JobScheduler</a>
+to provide a consistent job scheduling service back to api level 14 while
+leveraging JobScheduler on newer devices. WorkManager works with or without
+Google Play Services, which is something FJD cannot do. WorkManager was first
+released to alpha in May 2018 and then went thru extensive iteration and
+improvement based on developer feedback including 10 alphas; it moved to beta on
+Dec 19, 2018, and was released to
+<a href="https://developer.android.com/jetpack/androidx/releases/work#1.0.0">stable</a> on
+Mar 5, 2019. One thing the team has been discussing at some length is whether it
+would be better for developers in the long run if we create one holistic
+solution via WorkManager; where we can pool all of our efforts and also give
+developers a single unified recommended path?</strong></p>
+<p><strong>After careful evaluation, the team has decided to focus all of our efforts on
+WorkManager and to deprecate Firebase Job Dispatcher. We have modified our plans
+in direct response to developer feedback in order to make this as easy for you
+as possible. We know that managing background work is a critical part of your
+app and these changes impact you. We want to support you through this migration
+as much as we can by giving you as much advance notice as possible to make these
+changes. Firebase Job Dispatcher will be archived in github in about 1 year, on
+Apr 7, 2020. Apps should migrate to WorkManager or an alternative job management
+system before this date.</strong></p>
+<p><strong>We&rsquo;ve created a detailed
+<a href="https://developer.android.com/topic/libraries/architecture/workmanager/migrating-fb">migration guide</a>
+to assist you in the transition to WorkManager. After Apr 7, 2020, this github
+repository will be archived and support for FJD customer issues will stop.
+Additionally, FJD will stop working once your app starts targeting an Android
+version after Android Q.</strong></p>
+<p><strong>We are continuing to invest in and add new features to WorkManager and welcome
+any feedback or feature
+<a href="https://issuetracker.google.com/issues/new?component=409906&amp;template=1094197">requests</a>.</strong></p>
+<p>The Firebase JobDispatcher is a library for scheduling background jobs in your
+Android app. It provides a <a href="https://developer.android.com/reference/android/app/job/JobScheduler.html">JobScheduler</a>-compatible API that works on all
+recent versions of Android (API level 14+) that have Google Play services
+installed.</p>
+<h2>Overview</h2>
+<h3>What's a <a href="https://developer.android.com/reference/android/app/job/JobScheduler.html">JobScheduler</a>?</h3>
+<p>The JobScheduler is an Android system service available on API levels 21
+(Lollipop)+. It provides an API for scheduling units of work (represented...</p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/firebase-job-dispatcher</guid>
+            <pubDate>Fri, 01 Nov 2019 19:47:23 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Articles Code</title>
+            <link>https://www.mutanx-technologies.com/blog/articles-code</link>
+            <description>
+                <![CDATA[
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<p>This repository contains source code for the articles</p>
+<ul>
+<li><a href="http://www.wolinlabs.com/blog/linux.stm32.discovery.gcc.html">STM32 Discovery Development on Linux</a> </li>
+<li><a href="http://www.wolinlabs.com/blog/stm32f4.semihosting.html">STM32F4 Discovery Semihosting with the GNU Tools for Embedded ARM Processors Toolchain</a></li>
+<li><a href="http://www.wolinlabs.com/blog/stm32f4.virtual.com.port.html">STM32F4 Discovery Virtual COM/Serial Port</a></li>
+</ul>
+<p><br>
+Contents:</p>
+<ol>
+<li>LED blinker sample code (buildable)</li>
+<li>USB virtual serial port code (buildable)</li>
+<li>Semihosting Hello World sample code (buildable)</li>
+<li>STM sample code (buildable)</li>
+<li>STM libraries and headers</li>
+</ol>
+<p><br>
+STM libraries, headers, and samples have been modified to work with GNU Tools for ARM Embedded Processors toolchain and STM32F4 Discovery EVB.   Generally this just involved adding Makefiles and a slightly modified version of the TrueStudio linker file.   In the Project directory, everything under Demonstration, FW_upgrade, and Peripheral_Examples is buildable from the command line by running 'make'</p>
+<p>STM's approach toward 'library code' is somewhat non-traditional.  Rather than building libraries up front and linking them with your source, STM appears to intend for you to include their individual source files in your code's build.   Some of their source files include local headers and modules (i.e. stm32f4xx_conf.h, stm32f4xx_it.c/h, system_stm32f4xx.c, etc) that you modify/store in your source tree.  Because of this, building the library up front wouldn't work properly, as the configuration for some library modules could vary from project to project.</p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/articles-code</guid>
+            <pubDate>Fri, 01 Nov 2019 19:46:50 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Sample Project Name</title>
+            <link>https://www.mutanx-technologies.com/blog/sample-project-name</link>
+            <description>
+                <![CDATA[
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h1>Project Name</h1>
+<p>Short introduction or overview that explains <strong>what</strong> the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)</p>
+<p>You can also add some badges/states next to Project Name, e.g,</p>
+<ul>
+<li><a href="https://travis-ci.org/">Travis CI</a></li>
+<li><a href="http://www.appveyor.com/">AppVeyor</a></li>
+<li><a href="https://coveralls.io/">Coveralls</a></li>
+<li><a href="https://gitter.im/">Gitter</a></li>
+<li><a href="http://shields.io/">Shields.io</a></li>
+<li>Others</li>
+</ul>
+<h2>Features or Example</h2>
+<p>Show what the library does as concisely as possible, developers should be able to figure out <strong>how</strong> your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.</p>
+<h2>Motivation</h2>
+<p>A short description of the motivation behind the creation and maintenance of the project. This should explain <strong>why</strong> the project exists.</p>
+<h2>Requirements</h2>
+<p>This section is optional if there isn't any special dependencies. Else a bulletlist will suffice, e.g.,</p>
+<ul>
+<li><a href="https://nodejs.org/">Node.js</a></li>
+<li><a href="https://facebook.github.io/react/">React</a></li>
+<li>Others</li>
+</ul>
+<h2>Installation or Getting Started</h2>
+<p>Provide code examples and explanations of how to get the project, e.g.,</p>
+<pre><code>git clone https://github.com/Jasonnor/README.md.git
+cd README.md
+npm install README.md
+npm start</code></pre>
+<h2>Usage</h2>
+<p>Show how to use the project or library.</p>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://gist.github.com/jxson">jxson</a> - <a href="https://gist.github.com/jxson/1784669">README.md</a></li>
+<li><a href="https://gist.github.com/gistfrojd">gistfrojd</a> - <a href="https://gist.github.com/gistfrojd/5fcd3b70949ac6376f66">README.md</a></li>
+</ul>
+<p>Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.</p>
+<h2>Contributors</h2>
+<p>Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.</p>
+<h2>License</h2>
+<p>A short snippet describing the license (<a href="http://opensource.org/licenses/mit-license.php">MIT</a>, <a href="http://opensource.org/licenses/Apache-2.0">Apache</a>, etc.)</p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/sample-project-name</guid>
+            <pubDate>Fri, 01 Nov 2019 19:46:03 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Python Interview Problems</title>
+            <link>https://www.mutanx-technologies.com/blog/python-interview-problems</link>
+            <description>
+                <![CDATA[
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h1>Python-Interview-Problems-for-Practice (now supported with <em>Code Style</em>)</h1>
+<p><a href="https://github.com/ddavison/github-badges"><img src="http://githubbadges.com/star.svg?user=devAmoghS&repo=Python-Interview-Problems-for-Practice&style=flat&color=fff&background=007ec6" alt="star this repo" /></a>
+<a href="https://github.com/ddavison/github-badges/fork"><img src="http://githubbadges.com/fork.svg?user=devAmoghS&repo=Python-Interview-Problems-for-Practice&style=flat&color=fff&background=007ec6" alt="fork this repo" /></a>
+<a href="https://github.com/python/black"><img src="https://img.shields.io/badge/code style-black-000000.svg" alt="Code style: black" /></a></p>
+<h2>Updates</h2>
+<h4>Problems available: Solved -- 63 ; Newly Added -- 57</h4>
+<h4>1. Code Style is added</h4>
+<h4>2. 57 new problems are added in <code>Interview_Questions.md</code>. Solutions to be uploaded soon.</h4>
+<p><img src="https://images.unsplash.com/photo-1494178270175-e96de2971df9?ixlib=rb-1.2.1&auto=format&fit=crop&w=972&q=80" alt="alt text" />
+40+ Common code and interview problems solved in Python (it's growing...)</p>
+<h3>The core idea is not to utilize built-in functions or library and giving it a more logic-based approach, so that it can be language-friendly and not end up being another repository of "Python Tips and Tricks" .</h3>
+<h2>How good is the code ?</h2>
+<ul>
+<li>It is well tested</li>
+<li>Consistent formatting (using <a href="https://github.com/python/black">Black</a>)</li>
+<li>It can compile in its current state (and there are relatively no issues)</li>
+</ul>
+<h2>How much support is available?</h2>
+<ul>
+<li>FAQs (coming soon)</li>
+<li>Documentation (coming soon)</li>
+</ul>
+<h2>Issues</h2>
+<p>Feel free to submit issues and enhancement requests.</p>
+<h2>Contributing</h2>
+<p>Please refer to each project's style guidelines and guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.</p>
+<ol>
+<li><strong>Fork</strong> the repo on GitHub</li>
+<li><strong>Clone</strong> the project to your own machine</li>
+<li><strong>Commit</strong> changes to your own branch</li>
+<li><strong>Push</strong> your work back up to your fork</li>
+<li>Submit a <strong>Pull request</strong> so that we can review your changes</li>
+</ol>
+<p>NOTE: Be sure to merge the latest from "upstream" before making a pull request!</p>
+<h1>LICENSE</h1>
+<p>MIT License</p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/python-interview-problems</guid>
+            <pubDate>Fri, 01 Nov 2019 19:45:28 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Bitcoin ABC</title>
+            <link>https://www.mutanx-technologies.com/blog/bitcoin-abc</link>
+            <description>
+                <![CDATA[
+                                <p><a href="https://www.bitcoinabc.org"><img src="https://www.bitcoinabc.org/img/bitcoinabclogo.png" alt="Bitcoin ABC Logo" title="Bitcoin ABC" /></a></p>
+<p>The goal of Bitcoin ABC is to create sound money that is usable by everyone in
+the world. We believe this is a civilization-changing technology which will
+dramatically increase human flourishing, freedom, and prosperity. The project
+aims to achieve this goal by implementing a series of optimizations and
+protocol upgrades that will enable peer-to-peer digital cash to scale many
+orders of magnitude beyond current limits.</p>
+<h2>What is Bitcoin Cash?</h2>
+<p><a href="https://www.bitcoincash.org/">Bitcoin Cash</a> is an experimental digital
+currency that enables instant payments to anyone, anywhere in the world. It
+uses peer-to-peer technology to operate with no central authority: managing
+transactions and issuing money are carried out collectively by the network.
+Bitcoin Cash is a descendant of Bitcoin. It became a separate currency from
+the version supported by Bitcoin Core when the two split on August 1, 2017.
+Bitcoin Cash and the Bitcoin Core version of Bitcoin share the same
+transaction history up until the split.</p>
+<h2>What is Bitcoin ABC?</h2>
+<p>Bitcoin ABC is the name of open-source software which enables the use of
+Bitcoin Cash. It is a fork of the <a href="https://bitcoincore.org">Bitcoin Core</a>
+software project.</p>
+<h2>License</h2>
+<p>Bitcoin ABC is released under the terms of the MIT license. See
+<a href="/blog/bitcoin-abc/COPYING">COPYING</a> for more information or see
+https://opensource.org/licenses/MIT.</p>
+<h2>Development Process</h2>
+<p>This Github repository contains only source code of releases.</p>
+<p>Bitcoin ABC development takes place at https://reviews.bitcoinabc.org/</p>
+<p>If you would like to contribute, please read <a href="/blog/bitcoin-abc/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
+<h2>Disclosure Policy</h2>
+<p>See <a href="/blog/bitcoin-abc/DISCLOSURE_POLICY.md">DISCLOSURE_POLICY</a></p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/bitcoin-abc</guid>
+            <pubDate>Fri, 01 Nov 2019 19:29:38 +0100</pubDate>
+        </item>
+                        <item>
+            <title>README.md Generator</title>
+            <link>https://www.mutanx-technologies.com/blog/readme-md-generator</link>
+            <description>
+                <![CDATA[
+                                <h1 align="center">Welcome to readme-md-generator 👋</h1>
+<p align="center">
+  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
+  <a href="https://www.npmjs.com/package/readme-md-generator">
+    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
+    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
+  </a>
+  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
+    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
+  </a>
+  <a href="https://twitter.com/FranckAbgrall">
+    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social" target="_blank" />
+  </a>
+</p>
+<blockquote>
+<p>CLI that generates beautiful README.md files.<br /> <code>readme-md-generator</code> will suggest you default answers by reading your <code>package.json</code> and <code>git</code> configuration.</p>
+</blockquote>
+<h2>✨ Demo</h2>
+<p><code>readme-md-generator</code> is able to read your environment (package.json, git config...) to suggest you default answers during the <code>README.md</code> creation process:</p>
+<p align="center">
+  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
+</p>
+<p>Generated <code>README.md</code>:</p>
+<p align="center">
+  <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
+</p>
+<p>Example of <code>package.json</code> with good meta data:</p>
+<pre><code class="language-json">// The package.json is not required to run README-MD-GENERATOR
+{
+  "name": "readme-md-generator",
+  "version": "0.1.3",
+  "description": "CLI that generates beautiful README.md files.",
+  "author": "Franck Abgrall",
+  "license": "MIT",
+  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kefranabg/readme-md-generator/issues"
+  },
+  "engines": {
+    "npm": "&gt;=5.5.0",
+    "node": "&gt;=9.3.0"
+  }
+}</code></pre>
+<h2>🚀 Usage</h2>
+<p>Make sure you have <a href="https://www.npmjs.com/package/npx">npx</a> installed (<code>npx</code> is shipped by default since npm <code>5.2.0</code>)</p>
+<p>Just run the following command at the root of your project and answer questions:</p>
+<pre><code class="language-sh">npx readme-md-generator</code></pre>
+<p>Or use default values for all questions (<code>-y</code>):</p>
+<pre><code class="language-sh">npx readme-md-generator -y</code></pre>
+<p>Use your own <code>ejs</code> README template (<code>-p</code>):</p>
+<pre><code class="language-sh">npx readme-md-generator -p path/to/my/own/template.md</code></pre>
+<p>You can find <a href="https://github.com/kefranabg/readme-md-generator/tree/master/templates">ejs README template examples here</a>.</p>
+<h2>🤝 Contributing</h2>
+<p>Contributions, issues and feature requests are welcome.<br />
+Feel free to check <a href="https://github.com/kefranabg/readme-md-generator/issues">issues page</a> if you want to contribute.<br />
+<a href="/blog/readme-md-generator/./CONTRIBUTING.md">Check the contributing guide</a>.<br /></p>
+<h2>Contributors</h2>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.franck-abgrall.me/"><img src="https://avatars3.githubusercontent.com/u/9840435?v=4" width="75px;" alt="Franck Abgrall"/><br /><sub><b>Franck Abgrall</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=kefranabg" title="Code">💻</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=kefranabg" title="Documentation">📖</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=kefranabg" title="Tests">⚠️</a> <a href="#question-kefranabg" title="Answering Questions">💬</a> <a href="https://github.com/kefranabg/readme-md-generator/issues?q=author%3Akefranabg" title="Bug reports">🐛</a> <a href="#maintenance-kefranabg" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://yann-bertrand.fr/"><img src="https://avatars0.githubusercontent.com/u/5855339?v=4" width="75px;" alt="Yann Bertrand"/><br /><sub><b>Yann Bertrand</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=yannbertrand" title="Code">💻</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=yannbertrand" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://nikx.io"><img src="https://avatars2.githubusercontent.com/u/3141005?v=4" width="75px;" alt="Nik"/><br /><sub><b>Nik</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=NikxDa" title="Code">💻</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=NikxDa" title="Documentation">📖</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=NikxDa" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/detectivequack"><img src="https://avatars3.githubusercontent.com/u/7631054?v=4" width="75px;" alt="Saffaanh Soobratty"/><br /><sub><b>Saffaanh Soobratty</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=detectivequack" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/samit4me"><img src="https://avatars3.githubusercontent.com/u/3248531?v=4" width="75px;" alt="Samuel Sharpe"/><br /><sub><b>Samuel Sharpe</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=samit4me" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/apatrascu"><img src="https://avatars3.githubusercontent.com/u/1193770?v=4" width="75px;" alt="Alecsandru Patrascu"/><br /><sub><b>Alecsandru Patrascu</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=apatrascu" title="Code">💻</a></td>
+    <td align="center"><a href="http://milad.nekofar.com"><img src="https://avatars3.githubusercontent.com/u/147401?v=4" width="75px;" alt="Milad Nekofar"/><br /><sub><b>Milad Nekofar</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=nekofar" title="Code">💻</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=nekofar" title="Tests">⚠️</a> <a href="#ideas-nekofar" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/hgb123"><img src="https://avatars0.githubusercontent.com/u/18468577?v=4" width="75px;" alt="Bao Ho"/><br /><sub><b>Bao Ho</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=hgb123" title="Code">💻</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=hgb123" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/zizizi17"><img src="https://avatars0.githubusercontent.com/u/10571073?v=4" width="75px;" alt="Sasha Semanyuk"/><br /><sub><b>Sasha Semanyuk</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=zizizi17" title="Code">💻</a></td>
+    <td align="center"><a href="http://slashgear.github.io/"><img src="https://avatars0.githubusercontent.com/u/6263857?v=4" width="75px;" alt="Antoine Caron"/><br /><sub><b>Antoine Caron</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=Slashgear" title="Code">💻</a> <a href="https://github.com/kefranabg/readme-md-generator/commits?author=Slashgear" title="Tests">⚠️</a> <a href="#ideas-Slashgear" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/SwapnikKatkoori"><img src="https://avatars2.githubusercontent.com/u/40907690?v=4" width="75px;" alt="Swapnik Katkoori"/><br /><sub><b>Swapnik Katkoori</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=SwapnikKatkoori" title="Code">💻</a></td>
+    <td align="center"><a href="https://errorna.me"><img src="https://avatars2.githubusercontent.com/u/6669733?v=4" width="75px;" alt="Thibaud Courtoison"/><br /><sub><b>Thibaud Courtoison</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=Errorname" title="Code">💻</a></td>
+    <td align="center"><a href="https://briandouglas.me/"><img src="https://avatars2.githubusercontent.com/u/5713670?v=4" width="75px;" alt="Brian Douglas"/><br /><sub><b>Brian Douglas</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=bdougie" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kushagra-ag"><img src="https://avatars2.githubusercontent.com/u/31826645?v=4" width="75px;" alt="Kushagra"/><br /><sub><b>Kushagra</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=kushagra-ag" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/david-dasilva"><img src="https://avatars3.githubusercontent.com/u/372391?v=4" width="75px;" alt="David Da Silva"/><br /><sub><b>David Da Silva</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=david-dasilva" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/tbetous"><img src="https://avatars3.githubusercontent.com/u/4435536?v=4" width="75px;" alt="Thomas Betous"/><br /><sub><b>Thomas Betous</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=tbetous" title="Code">💻</a></td>
+    <td align="center"><a href="https://twitter.com/LucasHProcopio"><img src="https://avatars1.githubusercontent.com/u/26358642?v=4" width="75px;" alt="Lucas Henrique Procopio"/><br /><sub><b>Lucas Henrique Procopio</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=LucasProcopio" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/anku255"><img src="https://avatars1.githubusercontent.com/u/22813027?v=4" width="75px;" alt="Ankit Tiwari"/><br /><sub><b>Ankit Tiwari</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=anku255" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Zenigata"><img src="https://avatars1.githubusercontent.com/u/1022393?v=4" width="75px;" alt="Johan Bonneau"/><br /><sub><b>Johan Bonneau</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=Zenigata" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/hgwood/blog"><img src="https://avatars0.githubusercontent.com/u/1656170?v=4" width="75px;" alt="Hugo Wood"/><br /><sub><b>Hugo Wood</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=hgwood" title="Code">💻</a></td>
+  </tr>
+</table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<h2>Author</h2>
+<p>👤 <strong>Franck Abgrall</strong></p>
+<ul>
+<li>Twitter: <a href="https://twitter.com/FranckAbgrall">@FranckAbgrall</a></li>
+<li>Github: <a href="https://github.com/kefranabg">@kefranabg</a></li>
+</ul>
+<h2>Show your support</h2>
+<p>Please ⭐️ this repository if this project helped you!</p>
+<p><a href="https://www.patreon.com/FranckAbgrall"></p>
+<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+<p></a></p>
+<h2>📝 License</h2>
+<p>Copyright © 2019 <a href="https://github.com/kefranabg">Franck Abgrall</a>.<br />
+This project is <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">MIT</a> licensed.</p>
+<hr />
+<p><em>This README was generated with ❤️ by <a href="https://github.com/kefranabg/readme-md-generator">readme-md-generator</a></em></p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/readme-md-generator</guid>
+            <pubDate>Fri, 01 Nov 2019 19:28:35 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Generate TOC</title>
+            <link>https://www.mutanx-technologies.com/blog/generate-toc</link>
+            <description>
+                <![CDATA[
+                                <h1>gh-md-toc</h1>
+<p>gh-md-toc &mdash; is for you if you <strong>want to generate TOC</strong> for README.md or
+GitHub's wiki page and <strong>don't want to install any additional software</strong>.</p>
+<p>It's my try to fix a problem:</p>
+<ul>
+<li><a href="https://github.com/isaacs/github/issues/215">github/issues/215</a></li>
+</ul>
+<p>gh-md-toc is able to process:</p>
+<ul>
+<li>stdin</li>
+<li>local files (markdown files in local file system)</li>
+<li>remote files (html files on github.com)</li>
+</ul>
+<p>gh-md-toc tested on Ubuntu, and macOS High Sierra (gh-md-toc release 0.4.9). If you want it on Windows, you
+better to use a golang based implementation:</p>
+<ul>
+<li><a href="https://github.com/ekalinin/github-markdown-toc.go">github-markdown-toc.go</a></li>
+</ul>
+<p>It's more solid, reliable and with ability of a parallel processing. And
+absolutely without dependencies.</p>
+<p><a href="https://travis-ci.org/ekalinin/github-markdown-toc"><img src="https://travis-ci.org/ekalinin/github-markdown-toc.svg?branch=master" alt="Build Status"></a></p>
+<h1>Table of contents</h1>
+<!--ts-->
+<ul>
+<li><a href="#gh-md-toc">gh-md-toc</a></li>
+<li><a href="#table-of-contents">Table of contents</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#stdin">STDIN</a></li>
+<li><a href="#local-files">Local files</a></li>
+<li><a href="#remote-files">Remote files</a></li>
+<li><a href="#multiple-files">Multiple files</a></li>
+<li><a href="#combo">Combo</a></li>
+<li><a href="#auto-insert-and-update-toc">Auto insert and update TOC</a></li>
+<li><a href="#github-token">GitHub token</a></li>
+</ul></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#dependency">Dependency</a>
+<!--te--></li>
+</ul>
+<h1>Installation</h1>
+<p>Linux (manual installation)</p>
+<pre><code class="language-bash">$ wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+$ chmod a+x gh-md-toc</code></pre>
+<p>macOS (manual installation)</p>
+<pre><code class="language-bash">$ curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
+$ chmod a+x gh-md-toc</code></pre>
+<p>Linux or macOS (using <a href="https://github.com/basherpm/basher">Basher</a>)</p>
+<pre><code class="language-bash">$ basher install ekalinin/github-markdown-toc
+# `gh-md-toc` will automatically be available in the PATH</code></pre>
+<h1>Usage</h1>
+<h2>STDIN</h2>
+<p>Here's an example of TOC creating for markdown from STDIN:</p>
+<pre><code class="language-bash">&#10149; cat ~/projects/Dockerfile.vim/README.md | ./gh-md-toc -
+  * [Dockerfile.vim](#dockerfilevim)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)</code></pre>
+<h2>Local files</h2>
+<p>Here's an example of TOC creating for a local README.md:</p>
+<pre><code class="language-bash">&#10149; ./gh-md-toc ~/projects/Dockerfile.vim/README.md                                                                                                                                                &#1042;&#1089;. &#1084;&#1072;&#1088;&#1090;&#1072; 22 22:51:46 MSK 2015
+
+Table of Contents
+=================
+
+  * [Dockerfile.vim](#dockerfilevim)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)</code></pre>
+<h2>Remote files</h2>
+<p>And here's an example, when you have a README.md like this:</p>
+<ul>
+<li><a href="https://github.com/ekalinin/envirius/blob/f939d3b6882bfb6ecb28ef7b6e62862f934ba945/README.md">README.md without TOC</a></li>
+</ul>
+<p>And you want to generate TOC for it.</p>
+<p>There is nothing easier:</p>
+<pre><code class="language-bash">&#10149; ./gh-md-toc https://github.com/ekalinin/envirius/blob/master/README.md
+
+Table of Contents
+=================
+
+  * [envirius](#envirius)
+    * [Idea](#idea)
+    * [Features](#features)
+  * [Installation](#installation)
+  * [Uninstallation](#uninstallation)
+  * [Available plugins](#available-plugins)
+  * [Usage](#usage)
+    * [Check available plugins](#check-available-plugins)
+    * [Check available versions for each plugin](#check-available-versions-for-each-plugin)
+    * [Create an environment](#create-an-environment)
+    * [Activate/deactivate environment](#activatedeactivate-environment)
+      * [Activating in a new shell](#activating-in-a-new-shell)
+      * [Activating in the same shell](#activating-in-the-same-shell)
+    * [Get list of environments](#get-list-of-environments)
+    * [Get current activated environment](#get-current-activated-environment)
+    * [Do something in environment without enabling it](#do-something-in-environment-without-enabling-it)
+    * [Get help](#get-help)
+    * [Get help for a command](#get-help-for-a-command)
+  * [How to add a plugin?](#how-to-add-a-plugin)
+    * [Mandatory elements](#mandatory-elements)
+      * [plug_list_versions](#plug_list_versions)
+      * [plug_url_for_download](#plug_url_for_download)
+      * [plug_build](#plug_build)
+    * [Optional elements](#optional-elements)
+      * [Variables](#variables)
+      * [Functions](#functions)
+    * [Examples](#examples)
+  * [Example of the usage](#example-of-the-usage)
+  * [Dependencies](#dependencies)
+  * [Supported OS](#supported-os)
+  * [Tests](#tests)
+  * [Version History](#version-history)
+  * [License](#license)
+  * [README in another language](#readme-in-another-language)</code></pre>
+<p>That's all! Now all you need &mdash; is copy/paste result from console into original
+README.md.</p>
+<p>If you do not want to copy from console you can add <code>&gt; YOURFILENAME.md</code> at the end of the command like <code>./gh-md-toc https://github.com/ekalinin/envirius/blob/master/README.md &gt; table-of-contents.md</code> and this will store the table of contents to a file named table-of-contents.md in your current folder.</p>
+<p>And here is a result:</p>
+<ul>
+<li><a href="https://github.com/ekalinin/envirius/blob/24ea3be0d3cc03f4235fa4879bb33dc122d0ae29/README.md">README.md with TOC</a></li>
+</ul>
+<p>Moreover, it's able to work with GitHub's wiki pages:</p>
+<pre><code class="language-bash">&#10149; ./gh-md-toc https://github.com/ekalinin/nodeenv/wiki/Who-Uses-Nodeenv
+
+Table of Contents
+=================
+
+  * [Who Uses Nodeenv?](#who-uses-nodeenv)
+    * [OpenStack](#openstack)
+    * [pre-commit.com](#pre-commitcom)</code></pre>
+<h2>Multiple files</h2>
+<p>It supports multiple files as well:</p>
+<pre><code class="language-bash">&#10149; ./gh-md-toc \
+    https://github.com/aminb/rust-for-c/blob/master/hello_world/README.md \
+    https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md \
+    https://github.com/aminb/rust-for-c/blob/master/primitive_types_and_operators/README.md \
+    https://github.com/aminb/rust-for-c/blob/master/unique_pointers/README.md
+
+  *...</code></pre>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/generate-toc</guid>
+            <pubDate>Fri, 01 Nov 2019 19:27:55 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Testing blog</title>
+            <link>https://www.mutanx-technologies.com/blog/testing-blog</link>
+            <description>
+                <![CDATA[
+                                <hr />
+<p><strong>Advertisement :)</strong></p>
+<ul>
+<li><strong><a href="https://nodeca.github.io/pica/demo/">pica</a></strong> - high quality and fast image
+resize in browser.</li>
+<li><strong><a href="https://github.com/nodeca/babelfish/">babelfish</a></strong> - developer friendly
+i18n with plurals support and easy syntax.</li>
+</ul>
+<p>You will like those projects!</p>
+<hr />
+<h1>h1 Heading 8-)</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+<h2>Horizontal Rules</h2>
+<hr />
+<hr />
+<hr />
+<h2>Typographic replacements</h2>
+<p>Enable typographer option to see result.</p>
+<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
+<p>test.. test... test..... test?..... test!....</p>
+<p>!!!!!! ???? ,,  -- ---</p>
+<p>"Smartypants, double quotes" and 'single quotes'</p>
+<h2>Emphasis</h2>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><del>Strikethrough</del></p>
+<h2>Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using additional greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2>Lists</h2>
+<p>Unordered</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:</li>
+<li>Ac tristique libero volutpat at</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+</ul></li>
+<li>Very easy!</li>
+</ul>
+<p>Ordered</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>You can use sequential numbers...</li>
+<li>...or keep all the numbers as <code>1.</code></li>
+</ol>
+<p>Start numbering with offset:</p>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<h2>Code</h2>
+<p>Inline <code>code</code></p>
+<p>Indented code</p>
+<pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code</code></pre>
+<p>Block code "fences"</p>
+<pre><code>Sample text here...</code></pre>
+<p>Syntax highlighting</p>
+<pre><code class="language-js">var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));</code></pre>
+<h2>Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>Right aligned columns</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Option</th>
+<th style="text-align: right;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">data</td>
+<td style="text-align: right;">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align: right;">engine</td>
+<td style="text-align: right;">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align: right;">ext</td>
+<td style="text-align: right;">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<h2>Links</h2>
+<p><a href="http://dev.nodeca.com">link text</a></p>
+<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
+<p>Autoconverted link https://github.com/nodeca/pica (enable linkify to see)</p>
+<h2>Images</h2>
+<p><img src="https://octodex.github.com/images/minion.png" alt="Minion" />
+<img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat" title="The Stormtroopocat" /></p>
+<p>Like links, Images also have a footnote style syntax</p>
+<p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat" /></p>
+<p>With a reference later in the document defining the URL location:</p>
+<h2>Plugins</h2>
+<p>The killer feature of <code>markdown-it</code> is very effective support of
+<a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-emoji">Emojies</a></h3>
+<blockquote>
+<p>Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:</p>
+<p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
+</blockquote>
+<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output">how to change output</a> with twemoji.</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-sub">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup">Superscript</a></h3>
+<ul>
+<li>19^th^</li>
+<li>H~2~O</li>
+</ul>
+<h3><a href="https://github.com/markdown-it/markdown-it-ins">\<ins></a></h3>
+<p>++Inserted text++</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-mark">\<mark></a></h3>
+<p>==Marked text==</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
+<p>Footnote 1 link[^first].</p>
+<p>Footnote 2 link[^second].</p>
+<p>Inline footnote^[Text of inline footnote] definition.</p>
+<p>Duplicated footnote reference[^second].</p>
+<p>[^first]: Footnote <strong>can have markup</strong></p>
+<pre><code>and multiple paragraphs.</code></pre>
+<p>[^second]: Footnote text.</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
+<p>Term 1</p>
+<p>:   Definition 1
+with lazy continuation.</p>
+<p>Term 2 with <em>inline markup</em></p>
+<p>:   Definition 2</p>
+<pre><code>    { some code, part of Definition 2 }
+
+Third paragraph of definition 2.</code></pre>
+<p><em>Compact style:</em></p>
+<p>Term 1
+~ Definition 1</p>
+<p>Term 2
+~ Definition 2a
+~ Definition 2b</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
+<p>This is HTML abbreviation example.</p>
+<p>It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.</p>
+<p>*[HTML]: Hyper Text Markup Language</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-container">Custom containers</a></h3>
+<p>::: warning
+<em>here be dragons</em>
+:::</p>
+                ]]>
+            </description>
+            <category></category>
+            <guid>https://www.mutanx-technologies.com/blog/testing-blog</guid>
+            <pubDate>Fri, 01 Nov 2019 18:54:23 +0100</pubDate>
+        </item>
+                        <item>
+            <title>Sunshine in the Hills</title>
+            <link>https://www.mutanx-technologies.com/blog/sunshine-in-the-hills</link>
+            <description>
+                <![CDATA[
+                                <img alt="" src="https://www.mutanx-technologies.com/images/f/6/9/c/5/f69c596308eb34ee2be12f5db5bb5e131363ffb8-unsplashtiagogerken.jpeg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies tristique nulla et mattis. Phasellus id massa eget nisl congue blandit sit amet id ligula. Praesent et nulla eu augue tempus sagittis. Mauris faucibus nibh et nibh cursus in vestibulum sapien egestas. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc. Mauris mattis nunc sed mi sagittis et facilisis tortor volutpat. Etiam tincidunt urna mattis erat placerat placerat ac eu tellus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies tristique nulla et mattis. Phasellus id massa eget nisl congue blandit sit amet id ligula. Praesent et nulla eu augue tempus sagittis. Mauris faucibus nibh et nibh cursus in vestibulum sapien egestas. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc. Mauris mattis nunc sed mi sagittis et facilisis tortor volutpat. Etiam tincidunt urna mattis erat placerat placerat ac eu tellus. Ut nec velit id nisl tincidunt vehicula id a metus. Pellentesque erat neque, faucibus id ultricies vel, mattis in ante. Donec lobortis, mauris id congue scelerisque, diam nisl accumsan orci, condimentum porta est magna vel arcu. Curabitur varius ante dui. Vivamus sit amet ante ac diam ullamcorper sodales sed a odio. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies tristique nulla et mattis. Phasellus id massa eget nisl congue blandit sit amet id ligula. Praesent et nulla eu augue tempus sagittis. Mauris faucibus nibh et nibh cursus in vestibulum sapien egestas. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc. Mauris mattis nunc sed mi sagittis et facilisis tortor volutpat. Etiam tincidunt urna mattis erat placerat placerat ac eu tellus. Ut nec velit id nisl tincidunt vehicula id a metus. Pellentesque erat neque, faucibus id ultricies vel, mattis in ante. Donec lobortis, mauris id congue scelerisque, diam nisl accumsan orci, condimentum porta est magna vel arcu. Curabitur varius ante dui. Vivamus sit amet ante ac diam ullamcorper sodales sed a odio.</p>
+                ]]>
+            </description>
+            <category>journal,photography</category>
+            <guid>https://www.mutanx-technologies.com/blog/sunshine-in-the-hills</guid>
+            <pubDate>Fri, 11 Jul 2014 14:55:00 +0200</pubDate>
+        </item>
+                        <item>
+            <title>The Urban Jungle</title>
+            <link>https://www.mutanx-technologies.com/blog/the-urban-jungle</link>
+            <description>
+                <![CDATA[
+                                <img alt="" src="https://www.mutanx-technologies.com/images/e/a/b/2/1/eab21e6f36fe37b61df2bc07584f59559598ead3-unsplashvictorerixon.jpeg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies tristique nulla et mattis. Phasellus id massa eget nisl congue blandit sit amet id ligula. Praesent et nulla eu augue tempus sagittis. Mauris faucibus nibh et nibh cursus in vestibulum sapien egestas. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc. Mauris mattis nunc sed mi sagittis et facilisis tortor volutpat. Etiam tincidunt urna mattis erat placerat placerat ac eu tellus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies tristique nulla et mattis. Phasellus id massa eget nisl congue blandit sit amet id ligula. Praesent et nulla eu augue tempus sagittis. Mauris faucibus nibh et nibh cursus in vestibulum sapien egestas. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc. Mauris mattis nunc sed mi sagittis et facilisis tortor volutpat. Etiam tincidunt urna mattis erat placerat placerat ac eu tellus. Ut nec velit id nisl tincidunt vehicula id a metus. Pellentesque erat neque, faucibus id ultricies vel, mattis in ante. Donec lobortis, mauris id congue scelerisque, diam nisl accumsan orci, condimentum porta est magna vel arcu. Curabitur varius ante dui. Vivamus sit amet ante ac diam ullamcorper sodales sed a odio. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies tristique nulla et mattis. Phasellus id massa eget nisl congue blandit sit amet id ligula. Praesent et nulla eu augue tempus sagittis. Mauris faucibus nibh et nibh cursus in vestibulum sapien egestas. Curabitur ut lectus tortor. Sed ipsum eros, egestas ut eleifend non, elementum vitae eros. Mauris felis diam, pellentesque vel lacinia ac, dictum a nunc. Mauris mattis nunc sed mi sagittis et facilisis tortor volutpat. Etiam tincidunt urna mattis erat placerat placerat ac eu tellus. Ut nec velit id nisl tincidunt vehicula id a metus. Pellentesque erat neque, faucibus id ultricies vel, mattis in ante. Donec lobortis, mauris id congue scelerisque, diam nisl accumsan orci, condimentum porta est magna vel arcu. Curabitur varius ante dui. Vivamus sit amet ante ac diam ullamcorper sodales sed a odio.</p>
+                ]]>
+            </description>
+            <category>travel,photography,city</category>
+            <guid>https://www.mutanx-technologies.com/blog/the-urban-jungle</guid>
+            <pubDate>Fri, 04 Jul 2014 17:34:00 +0200</pubDate>
+        </item>
+            </channel>
+</rss>
